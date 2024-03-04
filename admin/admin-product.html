@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f88525de2e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quản trị Green Skincare - Sản phẩm</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 p-0 bg-blue collapse collapse-horizontal show" style="min-height: 100vh;" id="openMenu">
+              <img src="../images/logo.png" width="100px" alt="logo"> <span style="font-size: 32px; color: #fff; font-weight: bold;">QUẢN TRỊ</span>
+              <div class="list-group m-3">
+                  <a href="admin.html" class="list-group-item list-group-item-action" aria-current="true">
+                    Tổng quan
+                  </a>
+                  <a href="admin-account.html" class="list-group-item list-group-item-action">Tài khoản</a>
+                  <a href="admin-category.html" class="list-group-item list-group-item-action">Danh mục</a>
+                  <a href="admin-product.html" class="list-group-item list-group-item-action text-bg-warning border-warning active">Sản phẩm</a>
+                  <a href="admin-buy.html" class="list-group-item list-group-item-action">Lịch sử đặt hàng</a>
+                </div>
+            </div>
+            <div class="col-md p-0">
+                <nav class="navbar navbar-expand-lg bg-blue">
+                    <div class="container-fluid">
+                        <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="collapse" data-bs-target="#openMenu" aria-expanded="false" aria-controls="openMenu">
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Xin chào, Ngân
+                            </a>
+                            <ul class="dropdown-menu end-0">
+                              <li><a class="dropdown-item" href="#">Xem trang chủ</a></li>
+                              <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                            </ul>
+                          </li>
+                        </ul>   
+                      </div>
+                    </div>
+                </nav>
+                <!-- end nav -->
+
+                <div class="container">
+                    <a href="admin-product-add.html" class="btn btn-success float-end"><i class="fa-solid fa-circle-plus"></i> Thêm sản phẩm</a>
+                    <h2 class="my-3">Danh sách sản phẩm</h2>
+
+                    <table class="table text-center align-middle mb-5" id="danhSach">
+                        <thead class="table-success">
+                            <tr>
+                                <th>#ID</th>
+                                <th>Ảnh</th>
+                                <th class="text-start">Tên sản phẩm</th>
+                                <th>Mô tả</th>
+                                <th>Giá</th>
+                                <th>Loại</th>
+                                <th class="text-end">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- hiển thị ds sản phẩm -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start footer -->
+    <footer class="text-center text-bg-secondary p-1 rounded-3 fixed-bottom">
+      Bản quyền &copy; 2024, thuộc về GreenSkincare - Designed by <a href="https://vietrip.click/" class="link-highlight"><strong>nganntps32843</strong></a>
+  </footer>
+  <!-- end footer -->
+</body>
+</html>
+<!-- Trích dẫn phần mã JavaScript mới -->
+<script>
+  url = "http://localhost:3000/products";
+  fetch(url)
+    .then(res => res.json())
+    .then(listSP => {
+      // Lấy danh sách danh mục
+      fetch("http://localhost:3000/categories")
+        .then(response => response.json())
+        .then(categories => {
+          const catMap = new Map(categories.map(cat => [cat.id, cat.name]));
+
+          listSP.forEach(sp => {
+            document.querySelector("#danhSach tbody").innerHTML += `
+              <tr>
+                <td>${sp.id}</td>
+                <td><img src="../images/${sp.image}" class="rounded-3" style="width: 120px; height: 120px;" alt=""></td>
+                <td class="text-start">${sp.name}</td>
+                <td>${sp.detail}</td>
+                <td>${sp.price}đ</td>
+                <td>${catMap.get(sp.cat_id)}</td> <!-- Hiển thị tên danh mục thay vì ID -->
+                <td class="text-end mb-2">
+                  <button class="btn btn-warning mb-1"><a href="admin-product-edit.html?id=${sp.id}"><i class="fa-solid fa-pen"></i></a></button>
+                  <button class="btn btn-danger" onclick="xoaSP(${sp.id})"><i class="fa-solid fa-trash-can"></i></button>
+                </td>
+              </tr>
+            `;
+          });
+        })
+        .catch(error => console.error('Error fetching categories:', error));
+    })
+    .catch(error => console.error('Error fetching products:', error));
+</script>
+
+<script>
+  // xóa sp
+  function xoaSP(id){
+    const question = confirm("Bạn có chắc muốn xóa sản phẩm này?");
+    if(question==false){
+      return;
+    }
+    url = `http://localhost:3000/products/${id}`;
+    fetch(url,{method: "delete"}).then(res => res.json())
+    .then(data => {
+      console.log(data);
+      alert("Đã xóa sản phẩm thành công!");
+      document.location="admin-product.html";
+    })
+  }
+</script>

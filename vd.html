@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="mainMenu">
+        <li><a href="#">Home</a></li>
+    </ul>
+    <script>
+        var url = "http://localhost:3000/categories";
+        fetch(url)
+            .then(data => data.json())
+            .then(categories => {
+                var cat = {}; // Khai báo biến cat là một đối tượng
+                cat.arr = categories.map(cat => {
+                    return `
+                    <li><a href="#">${cat.name}</a></li>
+                    `;
+                });
+                document.querySelector("#mainMenu").innerHTML += cat.arr.join(''); // Sử dụng join để nối các thành phần trong mảng
+            })
+            .catch(error => console.error('Fetch error:', error));
+    </script>
+</body>
+</html>

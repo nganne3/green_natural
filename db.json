@@ -1,0 +1,214 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Kem chống nắng"
+    },
+    {
+      "id": "2",
+      "name": "Nước tẩy trang"
+    },
+    {
+      "id": "3",
+      "name": "Sữa rửa mặt"
+    },
+    {
+      "id": "4",
+      "name": "Body lotion"
+    }
+  ],
+  "products": [
+    {
+      "name": "Kem Chống Nắng La Roche-Posay SPF50+ 50ml",
+      "price": "359000",
+      "image": "hinh1.jpg",
+      "detail": "Kem Chống Nắng La Roche-Posay Anthelios Shaka Fluid SPF50+ là phiên bản mới cải tiến của dòng chống nắng Anthelios XL Fluid Ultra-Light - best seller của hãng và đồng thời được tạp chí Allure bình chọn là 1 trong top 9 kem chống nắng tốt nhất năm 2013. Vẫn mang trong mình tất cả những ưu điểm của người tiền nhiệm, Anthelios Shaka Fluid còn được nâng cấp lên thêm một tầm cao mới với chỉ số chống nắng PPD 46 và chất kem gần như VÔ HÌNH trên da - được hãng mô tả là loại kem chống nắng bền vững hàng đầu trong lịch sử 30 năm của dòng sản phẩm Anthelios.",
+      "cat_id": "1",
+      "id": "1"
+    },
+    {
+      "name": "Kem Chống Nắng Eucerin 50ml",
+      "price": "250000",
+      "image": "hinh2.jpg",
+      "detail": "Kem Chống Nắng Eucerin SPF50+ là phiên bản mới cải tiến của dòng chống nắng Anthelios XL Fluid Ultra-Light - best seller của hãng và đồng thời được tạp chí Allure bình chọn là 1 trong top 9 kem chống nắng tốt nhất năm 2013. Vẫn mang trong mình tất cả những ưu điểm của người tiền nhiệm, Anthelios Shaka Fluid còn được nâng cấp lên thêm một tầm cao mới với chỉ số chống nắng PPD 46 và chất kem gần như VÔ HÌNH trên da - được hãng mô tả là loại kem chống nắng bền vững hàng đầu trong lịch sử 30 năm của dòng sản phẩm Anthelios.",
+      "cat_id": "1",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "image": "hinh3.jpg",
+      "name": "Kem Chống Nắng The Saem SPF50+/PA++++ 50ml",
+      "price": 150000,
+      "detail": "Kem Chống Nắng The Saem Eco Earth Cica Sun Cream SPF50+/PA++++ 50ml phiên bản màu xanh là dòng chống nắng thuần vật lý, với thành phần chiết xuất từ rau má sẽ rất lành tính cho những bạn đang gặp vấn đề về mụn mà muốn tìm cho mình 1 loại chống nắng nhẹ dịu, không bí da hay gây kích ứng.",
+      "quantity": 2,
+      "cat_id": "1"
+    },
+    {
+      "id": "4",
+      "image": "hinh4.jpg",
+      "name": "Nước Tẩy Trang SVR 75ml",
+      "price": 200000,
+      "detail": "Nước tẩy trang SVR Sebiaclear Eau Micellaire giúp làm sạch, rửa và tẩy lớp trang điểm chỉ trong 1 bước, thậm chí là lớp trang điểm không thấm nước. Tẩy trang hoặc tẩy sạch bụi bẩn mà không cần rửa lại với nước, vừa sạch lại cực kỳ tiện lợi nữa. Sản phẩm còn giúp loại trừ cặn bẩn và bã nhờn dư thừa mà không làm khô da, giúp làn da sạch và tươi mát. Một trải nghiệm thật sự tươi mới!",
+      "quantity": 2,
+      "cat_id": "2"
+    },
+    {
+      "name": "Nước Tẩy Trang La Roche-Posay",
+      "price": "180000",
+      "image": "hinh5.jpg",
+      "detail": "Nước Tẩy Trang La Roche-Posay Micellar Water Ultra 50ml với công nghệ cải tiến Glyco Micellar loại bỏ tối đa các hạt bụi siêu nhỏ nằm sâu bên trong lỗ chân lông. Mang lại hiệu quả làm sạch sâu vượt trội giúp lấy đi lớp trang điểm, bã nhờn, khói bụi xe nhưng vẫn an toàn với làn da nhạy cảm và dễ kích ứng.",
+      "cat_id": "2",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "image": "hinh6.jpg",
+      "name": "Sữa Rửa Mặt Innisfree Green Tea 100gr",
+      "price": 220000,
+      "detail": "Sữa rửa mặt chiết xuất Trà xanh từ Đảo Jeju Green Tea Cleansing Foam rất lành tính, nhẹ dịu. Sử dụng công nghệ chưng cất tiên tiến các tinh chất từ lá trà, thích hợp cho mọi loại da, kể cả da nhạy cảm, đặc biệt phù hợp với da dầu và có mụn. Cho một làn da sáng mịn và khỏe mạnh.",
+      "quantity": 2,
+      "cat_id": "3"
+    },
+    {
+      "id": "7",
+      "image": "hinh7.jpg",
+      "name": "Sữa Rửa Mặt La Roche-Posay Effeclar Purifying",
+      "price": 120000,
+      "detail": "Purifying Gel làm sạch da dầu, thúc đẩy việc loại bỏ bã nhờn dư thừa với tinh chất tạo bọt nhẹ nhàng, tạo cảm giác thoải mái, sạch sẽ và tinh khiết cho da trước khi thực hiện các chăm sóc khác.",
+      "quantity": 2,
+      "cat_id": "3"
+    },
+    {
+      "id": "8",
+      "image": "hinh8.jpg",
+      "name": "Nước Tẩy Trang L'Oreal 400ml",
+      "price": 280000,
+      "detail": "Nước Tẩy Trang L'Oreal Paris Giúp Căng Mịn Da Revitalift Hyaluronic Acid Micellar Water 400ml là dòng nước tẩy trang cao cấp dành cho da dầu với khả năng làm sạch sâu gấp 5 lần tẩy trang thông thường, chứa vô số phân tử siêu nhỏ với khả năng hút sạch những tạp chất, bã nhờn nằm sâu trong lỗ chân lông, đồng thời cấp nước và làm mềm da, có thể sử dụng để làm sạch da mà không cần rửa mặt lại với nước.",
+      "quantity": 2,
+      "cat_id": "2"
+    },
+    {
+      "id": "9",
+      "image": "hinh9.jpg",
+      "name": "Sữa Dưỡng Thể Vaseline 725ml",
+      "price": 170000,
+      "detail": "Vaseline là thương hiệu đình đám ra đời vào năm 1870 thuộc tập đoàn Unilever. Hiện tại, Vaseline đã có mặt ở nhiều quốc gia và phân phối ở hầu hết các hệ thống siêu thị Việt. Các sản phẩm của hãng rất đa dạng từ dưỡng thể, khử mùi đến xịt tóc, nước hoa…. Trong đó, sữa dưỡng thể của Vaseline được cho là nhiều người quan tâm hơn cả. ",
+      "quantity": 2,
+      "cat_id": "4"
+    },
+    {
+      "name": "ngân test hahahahah",
+      "price": "200000",
+      "image": "anh1.jpg",
+      "detail": "đay là mo ta nè h",
+      "cat_id": "2",
+      "id": "fba1"
+    },
+    {
+      "name": "buồn ngủ huhu xỉu",
+      "price": "300000",
+      "image": "anh2.jpg",
+      "detail": "mo ta 2",
+      "cat_id": "3",
+      "id": "f253"
+    },
+    {
+      "id": "2af0",
+      "name": "test 3",
+      "price": "40000",
+      "image": "anh3.jpg",
+      "detail": "csamvak",
+      "cat_id": "1"
+    },
+    {
+      "id": "5b01",
+      "name": "á",
+      "price": "234",
+      "image": "ừ",
+      "detail": "ừe",
+      "cat_id": "4"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "username": "thingan",
+      "phone": "0987835430",
+      "password": "123456",
+      "role": "0"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "phone": "1234567890",
+      "password": "admin",
+      "role": "1"
+    },
+    {
+      "id": "2937",
+      "username": "Nguyễn Q",
+      "phone": "0973747847",
+      "password": "123",
+      "role": "0"
+    },
+    {
+      "id": "4a26",
+      "username": "Ngân 2",
+      "phone": "0999999999",
+      "password": "555",
+      "role": "0"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customer_name": "Nguyễn Văn Nam",
+      "customer_address": "389 Tô Ký, Trung Mỹ Tây, Quận 12,TPHCM",
+      "customer_email": "nguyennam@gmail.com",
+      "customer_phone": "123456789",
+      "create_date": "2024-01-23",
+      "status": "Chờ vận chuyển"
+    },
+    {
+      "id": "87b5",
+      "customer_name": "Bé Heo",
+      "customer_address": "Quận 12, TPHCM",
+      "customer_email": "beheo@gmail.com",
+      "customer_phone": "0987835430",
+      "create_date": "2024-01-23",
+      "status": "Chờ xác nhận"
+    },
+    {
+      "id": "a641",
+      "customer_name": "Nguyễn Ngân",
+      "customer_address": "HCM",
+      "customer_email": "nguyenthinganmtb@gmail.com",
+      "customer_phone": "0987835430",
+      "create_date": "2024-01-23",
+      "status": "Chờ xác nhận"
+    }
+  ],
+  "order_details": [
+    {
+      "id": "1",
+      "order_id": 1,
+      "product_id": 2,
+      "quantity": 1,
+      "unit_price": 10000
+    },
+    {
+      "id": "2a7c",
+      "order_id": "c392",
+      "product_id": 4,
+      "quantity": 1,
+      "unit_price": 200000
+    },
+    {
+      "id": "7ad0",
+      "order_id": "c392",
+      "product_id": 5,
+      "quantity": 1,
+      "unit_price": 180000
+    }
+  ]
+}
